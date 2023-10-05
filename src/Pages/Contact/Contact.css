@@ -1,0 +1,122 @@
+/* ContactForm.css */
+
+/* Base styles for larger screens */
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.contact-text {
+  width: 50%;
+}
+
+.contact-title {
+  color: #0d0d0d;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.contact-sub-text {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #304fff;
+}
+
+.contact-tinz {
+  margin: 20px 0;
+}
+
+.contact-tinz li {
+  margin: 10px 20px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #0d0d0d;
+}
+
+.contact-tinz li span {
+  color: #304fff;
+  font-weight: 700;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #304fff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    display: block;
+  }
+
+  .contact-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-tinz {
+    list-style: none;
+  }
+
+  form {
+    padding: 0 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-wrapper {
+    padding: 10px;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-sub-text {
+    font-size: 1.8rem;
+  }
+
+  form {
+    width: 340px;
+    padding: 0;
+    margin: 0;
+  }
+}

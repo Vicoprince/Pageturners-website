@@ -1,0 +1,144 @@
+.service-banner-section {
+    width: 100%;
+    height: 600px;
+}
+
+.service-banner {
+    width: 100%;
+    height: 600px;
+    background-size: contain;
+}
+
+/* Services.css */
+
+/* Base styles for larger screens */
+.services-container {
+  text-align: center;
+  padding: 20px;
+  /* background-color: #304fff; */
+  color: #0d0d0d;
+}
+
+/* Header styles */
+header {
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #304fff;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Service category styles */
+.service-category {
+  margin: 40px auto;
+  max-width: 400px;
+  /* border: 2px solid #0d0d0d; */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #304fff;
+  transition: transform 0.2s ease-in-out;
+  color: #fff;
+}
+
+.service-category:hover {
+  transform: scale(1.05);
+}
+
+.service-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-details p {
+  font-size: 1rem;
+}
+
+/* Featured service styles */
+.featured-service {
+  display: flex;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 800px;
+  background-color: #304fff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+  color: #fff;
+}
+
+.featured-service:hover {
+  transform: scale(1.02);
+}
+
+.service-image img {
+  max-width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #304fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #304fff;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .featured-service {
+    display: block;
+  }
+
+  .service-category,
+  .featured-service {
+    max-width: 90%;
+  }
+
+  .service-category {
+    padding: 15px;
+  }
+
+  .featured-service {
+    padding: 15px;
+  }
+
+  .service-details h2 {
+    font-size: 1.3rem;
+  }
+
+  .service-details p {
+    font-size: 0.9rem;
+  }
+
+  .service-image img {
+    max-width: 150px;
+    margin-right: 15px;
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

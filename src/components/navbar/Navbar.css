@@ -1,0 +1,143 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #0d0d0d;
+}
+
+.logo-link {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 176px;
+    height: 176px;
+    padding: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-items {
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d0d0d;
+    cursor: pointer;
+}
+
+.nav-lnks {
+    text-decoration: none;
+    color:#0d0d0d;
+}
+
+.action-btn {
+    color: #fff;
+    text-decoration: none;
+    background: #304fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 15px;
+    margin-right: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: fixed;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    list-style: none;
+    width: 300px;
+    background: #ffffff4d;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 999;
+    transition: height .2s cubic-bezier(0.171, 0.855, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: 270px;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-lnks:hover {
+    color: #304fff;
+    transition: .3s ease-in-out;
+}
+
+.dropdown-action-btn {
+    width: 100%;
+    color: #fff;
+    background: #304fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media (max-width: 792px) {
+    .nav-links,
+    .action-btn {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        font-size: 2rem;
+        color: #304fff;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-action-btn {
+        color: #fff;
+        text-decoration: none;
+        background: #304fff;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        padding: 15px;
+        margin-right: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .dropdown-action-btn:hover {
+        scale: 1.05;
+        transition: .3s ease-in-out;
+    }
+
+}
